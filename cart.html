@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- ? link css -->
+    <link rel="stylesheet" href="Assets/CssFiles/Home.css">
+    <!-- ?link js -->
+    <script src="Assets/JavascriptFiles/main.js" defer></script>
+    <script src="Assets/JavascriptFiles/cart.js" defer></script>
+    <!--? linkbootstarap -->
+    <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <!-- ? link sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- ? fontawesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+
+</head>
+
+<body>
+    <!-- ! nav -->
+    <nav class="navbar navbar-expand-lg fs-5 position-sticky top-0 ">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="./media3/Home/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Bar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background: transparent;">
+                    <ul class="navbar-nav ms-auto mt-2 gap-3 mt-lg-0">
+                        <li class="nav-item" style="white-space: nowrap;">
+
+                            <a class="nav-link " id="Home" onclick="active()" href="index.html" aria-current="page"><i
+                                    class="fa-solid fa-home pe-1"></i>Home</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link " id="Shop" onclick="active()" href="shop.html"><i
+                                    class="fa-solid fa-shopping-cart pe-1"></i>Shop</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Blog" onclick="active()" href="blog.html"> <i
+                                    class="fa-solid fa-blog pe-1"></i>Blog</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="About" onclick="active()" href="AboutUs.html"> <i
+                                    class="fa-solid fa-info-circle pe-1"></i>About</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Contact" onclick="active()" href="Contact.html"><i
+                                    class="fa-solid fa-envelope pe-1"></i>Contact</a>
+                        </li>
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link active" id="Store" onclick="active()" href="cart.html">
+                                <i class="fa-solid fa-bag-shopping pe-1"></i>Cart
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- !Hero -->
+    <div class="cart_hero_dec text-center">
+        <div class="container-md container-fluid pt-2">
+            <h1 class="top fw-bolder text-white">#Place_Your_Order</h1>
+            <h3 class="bottom_nor_eset text-success">We’re Ready to Assist You, Complete Your Order Below</h3>
+        </div>
+    </div>
+
+    <!-- !table of order -->
+    <div class="order pt-5">
+        <div class="container">
+            <div class="table">
+                <h1>No Products Selected Yet.</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Size</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! complete info -->
+    <div class="complete_info">
+        <div class="container">
+            <div class="row">
+                <div class="info_person l_to_r col-lg-6">
+                    <label for="coupon" class="fs-1 fw-bold">Apply Coupon</label><br>
+                    <input type="text" name="coupon" id="coupon" placeholder="Enter Your Coupon"
+                        class="fs-4  rounded-4 px-3"><br>
+                    <label for="name" class="fw-bold fs-4 pt-2">Name</label><br>
+                    <input type="text" name="Name" id="name" placeholder="Enter Your Name" class="fs-4 px-3 rounded-4 "
+                        required><br>
+                    <label for="num" class="fw-bold fs-4 pt-2">Phone Number</label><br>
+                    <input type="number" name="Phone" id="num" placeholder="Enter Phone Number"
+                        class="fs-4  rounded-4 px-3" required>
+                    <input type="submit" value="Apply Order" class="fs-4 px-3 d-block mt-3 btnn"><br>
+                </div>
+                <div class="cartTotal right_no_reset col-lg-6">
+                    <h1 class="fw-bold">Cart Total</h1>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Cart Subtotal</td>
+                                <td class="cart_subtotal">0</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping</td>
+                                <td class="text-danger fw-bolder">Free</td>
+                            </tr>
+                            <tr class="fw-bold">
+                                <td>Total</td>
+                                <td class="finall_Total">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <blockquote class="fs-5 pt-3 text-warning fw-bold">"Dear customer, please review your shopping cart
+                        to ensure the accuracy of the products and prices before completing your order."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--! Footer  -->
+    <footer class="py-5">
+        <div class="container">
+            <img class="img-fluid pb-3 ps-sm-5 p-lg-0 m-auto d-block" src="./media3/Home/logo.png" alt="logo">
+            <div class="row">
+                <div class="col-lg-4 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold">Contact</h3>
+                    <p><strong class="text-secondary">Address:</strong> 15 Tahrir Square, Downtown, Cairo.</p>
+                    <p><strong class="text-secondary">Phone:</strong> +20 2 1234 5678</p>
+                    <p><strong class="text-secondary">Hours:</strong> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <div class="Follow">
+                        <h3 class="fw-bold">Follow Us</h3>
+                        <p class="social-icons">
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold">About</h3>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold" style="white-space: nowrap;">My Account</h3>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track MY Order</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold" style="white-space: nowrap;">Install App</h3>
+                    <p>From App Store OR Google Play</p>
+                    <div class="imgs w-100 mb-4">
+                        <img src="./media3/Home/app.jpg" alt="apple">
+                        <img src="./media3/Home/play.jpg" alt="apple">
+                    </div>
+                    <p class="mb-4">Secured Payment Gateways</p>
+                    <img src="./media3/Home/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>

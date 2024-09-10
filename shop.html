@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- ? link css -->
+    <link rel="stylesheet" href="Assets/CssFiles/Home.css">
+    <!-- ?link js -->
+    <script src="Assets/JavascriptFiles/main.js" defer></script>
+    <!--? linkbootstarap -->
+    <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+
+    <!-- ? fontawesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+
+</head>
+
+<body>
+    <!-- ! nav -->
+    <nav class="navbar navbar-expand-lg fs-5 position-sticky top-0 ">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="./media3/Home/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Bar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background: transparent;">
+                    <ul class="navbar-nav ms-auto mt-2 gap-3 mt-lg-0">
+                        <li class="nav-item" style="white-space: nowrap;">
+
+                            <a class="nav-link " id="Home" onclick="active()" href="index.html" aria-current="page"><i
+                                    class="fa-solid fa-home pe-1"></i>Home</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link active" id="Shop" onclick="active()" href="shop.html"><i
+                                    class="fa-solid fa-shopping-cart pe-1"></i>Shop</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Blog" onclick="active()" href="blog.html"> <i
+                                    class="fa-solid fa-blog pe-1"></i>Blog</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="About" onclick="active()" href="AboutUs.html"> <i
+                                    class="fa-solid fa-info-circle pe-1"></i>About</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Contact" onclick="active()" href="Contact.html"><i
+                                    class="fa-solid fa-envelope pe-1"></i>Contact</a>
+                        </li>
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Store" onclick="active()" href="cart.html">
+                                <i class="fa-solid fa-bag-shopping pe-1"></i>Cart
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! hero -->
+    <div class="hero_section_shop py-5 text-start">
+        <div class="container-md container-fluid pt-2">
+            <h1 class="text-center top pb-5">CARA SHOP</h1>
+            <h2 class="text-capitalize top text-light fw-semibold">Discover the Latest Trends in Fashion</h2>
+            <p class="fw-semibold top fs-3">Explore our exclusive collections for men and women. Whether you’re looking
+                for stylish everyday
+                wear or elegant outfits for special occasions, we have something for everyone.</p>
+            <div class="row ">
+                <p class="fs-3 left col-md-6 text-info"> <strong class="fs-2 text-warning">Men’s Collection:</strong>
+                    Find modern, comfortable, and trendy clothing designed to make a statement.</p>
+                <p class="fs-3 right col-md-6 text-info"> <strong class="fs-2 text-warning">Women’s Collection:</strong>
+                    From chic and sophisticated to casual and comfortable, discover styles.</p>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <a href="#catid" class="btn btn-outline-warning w-50 fs-4 fw-bold">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! category -->
+    <div class="category pb-5" id="catid">
+        <div class="container">
+            <h1 class="text-center border-bottom pt-5  text-warning">Discover Our Categories!</h1>
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+                <div class=" col l_to_r">
+                    <div class="card text-center bg-dark my-2 ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media2/Shope/cat_jacket.jpg" alt="">
+                        </div>
+                        <a href="#Jacket_sec" class="card-title fs-4 fw-bold w-50 mx-auto btn btn-light ">JACKETS</a>
+                    </div>
+                </div>
+                <div class=" col l_to_r">
+                    <div class="card text-center bg-dark my-2">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media2/Shope/cat_trouser.jpg" alt="">
+                        </div>
+                        <a href="#Trousers_sec" class="card-title fs-4 fw-bold w-50 mx-auto btn btn-light ">TROUSERS</a>
+                    </div>
+                </div>
+                <div class=" col l_to_r">
+                    <div class="card text-center bg-dark my-2 ">
+                        <div class="card-img p-3">
+                            <img class="w-100" style="height: 50%;" src="./media2/Shope/cat_shirt.jpg" alt="">
+                        </div>
+                        <a href="#T-shirt_Sec" class="card-title fs-4 fw-bold w-50 mx-auto btn btn-light ">T-SHIRTS</a>
+                    </div>
+                </div>
+                <div class=" col l_to_r">
+                    <div class="card text-center bg-dark my-2 ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media2/Shope/cat_blous.jpg" alt="">
+                        </div>
+                        <a href="#Blouse_sec" class="card-title fs-4 fw-bold w-50 mx-auto btn btn-light ">BLOUSE</a>
+                    </div>
+                </div>
+                <div class=" col l_to_r">
+                    <div class="card text-center bg-dark my-2 ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media2/Shope/cat_dress.jpg" alt="">
+                        </div>
+                        <a href="#Dress_sec" class="card-title fs-4 fw-bold w-50 mx-auto btn btn-light ">Dress</a>
+                    </div>
+                </div>
+                <div class=" col l_to_r">
+                    <div class="card text-center bg-dark my-2 ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media2/Shope/cat_Coat.jpg" alt="">
+                        </div>
+                        <a href="#Coat_sec" class="card-title fs-4 fw-bold w-50 mx-auto btn btn-light ">COAT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--! men section -->
+    <section id="men">
+
+        <!-- !T-shirts sections -->
+        <div id="T-shirt_Sec" class="products_shopPG py-5">
+            <div class="container">
+                <h1 class="text-center border-bottom pt-5  text-info">Premium Quality T-Shirts for Men & Women</h1>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-1 p-2">
+                            <img src="./media2/Shope/Products_Tshirt1.jpg" class="card-img" alt="T-Shirt 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Hokusai ..</h4>
+                                <a href="#" onclick="CompletePage('T-shirt', '0')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-2 p-2">
+                            <img src="./media2/Shope/Products_Tshirt2.jpg" class="card-img" alt="T-Shirt 2">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Blue Loone..</h4>
+                                <a href="#" onclick="CompletePage('T-shirt', '1')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-3 p-2">
+                            <img src="./media2/Shope/Products_Tshirt3.jpg" class="card-img" alt="T-Shirt 3">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">mountain grap..</h4>
+                                <a href="#" onclick="CompletePage('T-shirt', '2')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-4 p-2">
+                            <img src="./media2/Shope/Products_Tshirt4.jpg" class="card-img" alt="T-Shirt 4">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">STWD lo..</h4>
+                                <a href="#" onclick="CompletePage('T-shirt', '3')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- !Jackets sections -->
+        <div id="Jacket_sec" class="products_shopPG py-5">
+            <div class="container">
+                <h1 class="text-center border-bottom pt-5  text-info">Stylish & Comfortable Jackets for Every Occasion
+                </h1>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-1 p-2">
+                            <img src="./media2/Shope/Products_Jacket1.jpg" class="card-img" alt="T-Shirt 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Faux suede..</h4>
+                                <a href="#" onclick="CompletePage('Jacket', '0')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-2 p-2">
+                            <img src="./media2/Shope/Products_Jacket2.jpg" class="card-img" alt="T-Shirt 2">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">pouch pock..</h4>
+                                <a href="#" onclick="CompletePage('Jacket', '1')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-3 p-2">
+                            <img src="./media2/Shope/Products_Jacket3.jpg" class="card-img" alt="T-Shirt 3">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Denim jac..</h4>
+                                <a href="#" onclick="CompletePage('Jacket', '2')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-4 p-2">
+                            <img src="./media2/Shope/Products_Jacket4.jpg" class="card-img" alt="T-Shirt 4">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Lightweight..</h4>
+                                <a href="#" onclick="CompletePage('Jacket', '3')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- !Troussers sections -->
+        <div id="Trousers_sec" class="products_shopPG py-5">
+            <div class="container">
+                <h1 class="text-center border-bottom pt-5  text-info">Explore Our Latest Trousers Collection</h1>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-1 p-2">
+                            <img src="./media2/Shope/Products_Trous1.jpg" class="card-img" alt="T-Shirt 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Wide-leg..</h4>
+                                <a href="#" onclick="CompletePage('Trousers', '0')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-2 p-2">
+                            <img src="./media2/Shope/Products_Trous2.jpg" class="card-img" alt="T-Shirt 2">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Cargo with pockets..</h4>
+                                <a href="#" onclick="CompletePage('Trousers', '1')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-3 p-2">
+                            <img src="./media2/Shope/Products_Trous3.jpg" class="card-img" alt="T-Shirt 3">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Piqué ..</h4>
+                                <a href="#" onclick="CompletePage('Trousers', '2')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-4 p-2">
+                            <img src="./media2/Shope/Products_Trous4.jpg" class="card-img" alt="T-Shirt 4">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Cargo jogger..</h4>
+                                <a href="#" onclick="CompletePage('Trousers', '3')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--! Woman section -->
+    <section id="women">
+        <!-- !Blouse sections -->
+        <div id="Blouse_sec" class="products_women_shopPG py-5">
+            <div class="container">
+                <h1 class="text-center border-bottom pt-5  text-danger">Chic & Versatile Blouses for Any Occasion</h1>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-1 p-2">
+                            <img src="./media2/Shope/Product_Blouse1.jpg" class="card-img" alt="T-Shirt 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Rustic over..</h4>
+                                <a href="#" onclick="CompletePage('Blouses', '0')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate  card-2 p-2">
+                            <img src="./media2/Shope/Product_Blouse2.jpg" class="card-img" alt="T-Shirt 2">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Linen blend..</h4>
+                                <a href="#" onclick="CompletePage('Blouses', '1')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate   card-3 p-2">
+                            <img src="./media2/Shope/Product_Blouse3.jpg" class="card-img" alt="T-Shirt 3">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Striped shirt ..</h4>
+                                <a href="#" onclick="CompletePage('Blouses', '2')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate  card-4 p-2">
+                            <img src="./media2/Shope/Product_Blouse4.jpg" class="card-img" alt="T-Shirt 4">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Crepe kim..</h4>
+                                <a href="#" onclick="CompletePage('Blouses', '3')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- !Dress sections -->
+        <div id="Dress_sec" class="products_women_shopPG py-5">
+            <div class="container">
+                <h1 class="text-center border-bottom pt-5  text-danger">Trendy & Timeless Dresses to Elevate Your
+                    Wardrobe
+                </h1>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-1 p-2">
+                            <img src="./media2/Shope/Products_Dress1.jpg" class="card-img" alt="T-Shirt 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Asymmetric mi..</h4>
+                                <a href="#" onclick="CompletePage('Dresses', '0')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-2 p-2">
+                            <img src="./media2/Shope/Products_Dress2.jpg" class="card-img" alt="T-Shirt 2">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Strapless midi..</h4>
+                                <a href="#" onclick="CompletePage('Dresses', '1')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-3 p-2">
+                            <img src="./media2/Shope/Products_Dress3.jpg" class="card-img" alt="T-Shirt 3">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Long strapless ..</h4>
+                                <a href="#" onclick="CompletePage('Dresses', '2')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-4 p-2">
+                            <img src="./media2/Shope/Products_Dress4.jpg" class="card-img" alt="T-Shirt 4">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Sleeveless halt..</h4>
+                                <a href="#" onclick="CompletePage('Dresses', '3')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- !Coat sections -->
+        <div id="Coat_sec" class="products_women_shopPG py-5">
+            <div class="container">
+                <h1 class="text-center border-bottom pt-5 text-danger">Stay Warm in Style with Our Premium Coats</h1>
+
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-1 p-2">
+                            <img src="./media2/Shope/Products_Coat1.jpg" class="card-img" alt="T-Shirt 1">
+
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Faux suede..</h4>
+                                <a href="#" onclick="CompletePage('Coats', '0')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-2 p-2">
+                            <img src="./media2/Shope/Products_Coat2.jpg" class="card-img" alt="T-Shirt 1">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Puffer jacket..</h4>
+                                <a href="#" onclick="CompletePage('Coats', '1')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-3 p-2">
+                            <img src="./media2/Shope/Products_Coat3.jpg" class="card-img" alt="T-Shirt 3">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Long flowing ..</h4>
+                                <a href="#" onclick="CompletePage('Coats', '2')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card prod_shop_rotate card-4 p-2">
+                            <img src="./media2/Shope/Products_Coat4.jpg" class="card-img" alt="T-Shirt 4">
+                            <div class="card-body">
+                                <h4 class="card-title text-light text-center">Distressed faux..</h4>
+                                <a href="#" onclick="CompletePage('Coats', '3')"
+                                    class="btn btn-outline-primary fs-5 fw-semibold w-100">Show Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--! Footer  -->
+    <footer class="py-5">
+        <div class="container">
+            <img class="img-fluid pb-3 ps-sm-5 p-lg-0 m-auto d-block" src="./media3/Home/logo.png" alt="logo">
+            <div class="row">
+                <div class="col-lg-4 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold">Contact</h3>
+                    <p><strong class="text-secondary">Address:</strong> 15 Tahrir Square, Downtown, Cairo.</p>
+                    <p><strong class="text-secondary">Phone:</strong> +20 2 1234 5678</p>
+                    <p><strong class="text-secondary">Hours:</strong> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <div class="Follow">
+                        <h3 class="fw-bold">Follow Us</h3>
+                        <p class="social-icons">
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold">About</h3>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold" style="white-space: nowrap;">My Account</h3>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track MY Order</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold" style="white-space: nowrap;">Install App</h3>
+                    <p>From App Store OR Google Play</p>
+                    <div class="imgs w-100 mb-4">
+                        <img src="./media3/Home/app.jpg" alt="apple">
+                        <img src="./media3/Home/play.jpg" alt="apple">
+                    </div>
+                    <p class="mb-4">Secured Payment Gateways</p>
+                    <img src="./media3/Home/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
+    <!-- ? scrolrevial -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>

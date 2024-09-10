@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <!-- ? link css -->
+    <link rel="stylesheet" href="Assets/CssFiles/Home.css">
+    <!-- ?link js -->
+    <script src="Assets/JavascriptFiles/main.js" defer></script>
+    <!--? linkbootstarap -->
+    <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <!-- ? fontawesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+
+</head>
+
+<body>
+
+    <!-- ! nav -->
+    <nav class="navbar navbar-expand-lg fs-5 position-sticky top-0 ">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="./media3/Home/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Bar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background: transparent;">
+                    <ul class="navbar-nav ms-auto mt-2 gap-3 mt-lg-0">
+                        <li class="nav-item" style="white-space: nowrap;">
+
+                            <a class="nav-link " id="Home" onclick="active()" href="index.html" aria-current="page"><i
+                                    class="fa-solid fa-home pe-1"></i>Home</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link " id="Shop" onclick="active()" href="shop.html"><i
+                                    class="fa-solid fa-shopping-cart pe-1"></i>Shop</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link " id="Blog" onclick="active()" href="blog.html"> <i
+                                    class="fa-solid fa-blog pe-1"></i>Blog</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link active" id="About" onclick="active()" href="AboutUs.html"> <i
+                                    class="fa-solid fa-info-circle pe-1"></i>About</a>
+                        </li>
+
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Contact" onclick="active()" href="Contact.html"><i
+                                    class="fa-solid fa-envelope pe-1"></i>Contact</a>
+                        </li>
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" id="Store" onclick="active()" href="cart.html">
+                                <i class="fa-solid fa-bag-shopping pe-1"></i>Cart
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ! hero -->
+    <div class="About_hero_sec text-center">
+        <div class="container-md container-fluid pt-2">
+            <h1 class="top">Our Story, Your Journey...</h1>
+            <h3 class="bottom_nor_eset">Let's Discover Who We Are !!?</h3>
+        </div>
+    </div>
+
+    <!-- ! body -->
+    <div class="about_main_Sec ">
+        <div class="container">
+            <div class="row f_sec d-flex align-items-center justify-content-center flex-wrap mb-5 g-5">
+                <div class=" main_img col-xl-6 col-12 ">
+                    <img src="media/About/How WE are.jpg" class="img-fluid top rounded-4 w-100" alt="who we are">
+                </div>
+                <div class="deatilesblog col-xl-6 bottom_nor_eset col-12 pt-4 right">
+                    <h2 class="fw-bolder text-white">#Let's Known Who We Are..</h2>
+                    <h4 class="">
+                        We are Cara, a fashion brand committed to crafting clothes that embody elegance, creativity, and
+                        individuality. Our
+                        designs are inspired by the latest trends, but we focus on timeless style that never goes out of
+                        fashion. Each piece is
+                        carefully made to ensure comfort, quality, and a perfect fit, whether you're dressing for casual
+                        outings or special
+                        occasions. At Cara, we believe in empowering people to express their true selves through
+                        fashion, helping them feel
+                        confident and unique in every outfit. Discover a collection that celebrates your personality.
+                    </h4>
+                    <abbr title="" class="fs-5 text-warning">Cara is a fashion brand that focuses on empowering
+                        individuals through style and creativity.</abbr>
+                    <br><br>
+                    <marquee class="fw-bolder text-white  rounded-2" scrollamount="10" width="100%" bgcolor="#000">
+                        Welcome to Cara! Discover the latest trends in fashion, where elegance meets creativity. Shop
+                        our timeless collections now!
+                    </marquee>
+                </div>
+            </div>
+
+            <div class="App text-center ">
+                <h1 class="opacity">Download Our App</h1>
+                <div class="video prod_shop_rotate">
+                    <video src="./media/About/1 (1).mp4" loop autoplay muted></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ! features -->
+    <div class="features p-5">
+        <div class="container">
+            <div class="row d-flex  justify-content-around">
+                <div class="col-lg-2 col-md-4 col-sm-6 rotate">
+                    <div class="card bg-black text-center ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media3/Home/f1.png" alt="feat1">
+                        </div>
+                        <div class="card-title fs-4 fw-bold bg-danger text-info fs-6">Free Shipping</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 rotate">
+                    <div class="card bg-black text-center ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media3/Home/f2.png" alt="feat1">
+                        </div>
+                        <div class="card-title fs-4 fw-bold bg-danger-subtle text-danger fs-6">Online Order</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 rotate">
+                    <div class="card bg-black text-center ">
+                        <div class="card-img p-3">
+                            <img class="w-100" src="./media3/Home/f6.png" alt="feat1">
+                        </div>
+                        <div class="card-title fs-4 fw-bold bg-primary text-warning fs-6">F24/7 Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--! Footer  -->
+    <footer class="py-5">
+        <div class="container">
+            <img class="img-fluid pb-3 ps-sm-5 p-lg-0 m-auto d-block" src="./media3/Home/logo.png" alt="logo">
+            <div class="row">
+                <div class="col-lg-4 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold">Contact</h3>
+                    <p><strong class="text-secondary">Address:</strong> 15 Tahrir Square, Downtown, Cairo.</p>
+                    <p><strong class="text-secondary">Phone:</strong> +20 2 1234 5678</p>
+                    <p><strong class="text-secondary">Hours:</strong> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <div class="Follow">
+                        <h3 class="fw-bold">Follow Us</h3>
+                        <p class="social-icons">
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-secondary">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold">About</h3>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold" style="white-space: nowrap;">My Account</h3>
+                    <ul class="list-unstyled gap-3">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track MY Order</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-lg-start text-sm-center my-3">
+                    <h3 class="fw-bold" style="white-space: nowrap;">Install App</h3>
+                    <p>From App Store OR Google Play</p>
+                    <div class="imgs w-100 mb-4">
+                        <img src="./media3/Home/app.jpg" alt="apple">
+                        <img src="./media3/Home/play.jpg" alt="apple">
+                    </div>
+                    <p class="mb-4">Secured Payment Gateways</p>
+                    <img src="./media3/Home/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
+    <!-- ? scrolrevial -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
