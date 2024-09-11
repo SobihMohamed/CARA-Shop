@@ -127,35 +127,35 @@ function All_reveal() {
   ScrollReveal().reveal(".left_hero", {
     origin: "left",
     distance: "800px",
-    duration: 1500,
+    duration: 1000,
     reset: true,
   });
   // ! ads
   ScrollReveal().reveal(".left", {
     origin: "left",
     distance: "800px",
-    duration: 1800,
+    duration: 1000,
     reset: true,
   });
   // !ads
   ScrollReveal().reveal(".top", {
     origin: "top",
     distance: "800px",
-    duration: 1800,
+    duration: 1000,
     reset: false,
   });
   // !ads
   ScrollReveal().reveal(".right", {
     origin: "right",
     distance: "800px",
-    duration: 1800,
+    duration: 1000,
     reset: true,
   });
   // !ads
   ScrollReveal().reveal(".bottom", {
     origin: "bottom",
     distance: "80px",
-    duration: 1800,
+    duration: 1000,
     reset: true,
   });
   // ! features box
@@ -165,8 +165,8 @@ function All_reveal() {
       y: 20,
       z: 50,
     },
-    duration: 1500,
-    interval: 200,
+    duration: 1000,
+    interval: 100,
     reset: false,
   });
   // ! products
@@ -174,9 +174,8 @@ function All_reveal() {
     origin: "bottom",
     distance: "50px",
     duration: 1000,
-    delay: 200,
     easing: "ease-in-out",
-    interval: 300,
+    interval: 100,
     reset: false,
     opacity: 0,
   });
@@ -184,10 +183,9 @@ function All_reveal() {
   ScrollReveal().reveal(".l_to_r", {
     origin: "left",
     distance: "100px",
-    duration: 1200,
-    delay: 300,
+    duration: 1000,
     easing: "ease-in-out",
-    interval: 500,
+    interval: 100,
     reset: false,
     opacity: 0,
   });
@@ -197,9 +195,8 @@ function All_reveal() {
       z: 50,
       y: 100,
     },
-    duration: 1200,
-    interval: 200,
-    delay: 200,
+    duration: 1000,
+    interval: 100,
     reset: false,
   });
 
@@ -207,7 +204,7 @@ function All_reveal() {
   ScrollReveal().reveal(".right_no_reset", {
     origin: "right",
     distance: "800px",
-    duration: 1800,
+    duration: 1000,
     reset: false,
   });
 
@@ -218,7 +215,7 @@ function All_reveal() {
     },
     opacity:.1,
     duration: 1000,
-    interval: 200,
+    interval: 100,
     reset: false,
   });
   // ! about
@@ -226,27 +223,27 @@ function All_reveal() {
   ScrollReveal().reveal(".bottom_nor_eset", {
     origin: "bottom",
     distance: "80px",
-    duration: 1800,
+    duration: 1000,
     reset: false,
   });
   // ?opacity
   ScrollReveal().reveal(".opacity", {
-    duration: 1800,
+    duration: 1000,
     opacity:0.1,
     reset: false,
   });
   // ! contact opacity
   ScrollReveal().reveal(".iframe",{
-    duration:5000,
+    duration:1000,
     opacity:0,
     reset:false,
   }
  )
  ScrollReveal().reveal("#cardd",{
-   opacity:0,
+  opacity:0,
   origin:"top",
   distance:"300px",
-  interval:700,
+  interval: 100,
   reset:false,
  })
 }
