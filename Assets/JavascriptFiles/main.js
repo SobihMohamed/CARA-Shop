@@ -127,35 +127,35 @@ function All_reveal() {
   ScrollReveal().reveal(".left_hero", {
     origin: "left",
     distance: "800px",
-    duration: 1000,
+    duration: 1500,
     reset: true,
   });
   // ! ads
   ScrollReveal().reveal(".left", {
     origin: "left",
     distance: "800px",
-    duration: 1000,
+    duration: 1800,
     reset: true,
   });
   // !ads
   ScrollReveal().reveal(".top", {
     origin: "top",
     distance: "800px",
-    duration: 1000,
+    duration: 1800,
     reset: false,
   });
   // !ads
   ScrollReveal().reveal(".right", {
     origin: "right",
     distance: "800px",
-    duration: 1000,
+    duration: 1800,
     reset: true,
   });
   // !ads
   ScrollReveal().reveal(".bottom", {
     origin: "bottom",
     distance: "80px",
-    duration: 1000,
+    duration: 1800,
     reset: true,
   });
   // ! features box
@@ -165,8 +165,8 @@ function All_reveal() {
       y: 20,
       z: 50,
     },
-    duration: 1000,
-    interval: 100,
+    duration: 1500,
+    interval: 200,
     reset: false,
   });
   // ! products
@@ -174,8 +174,9 @@ function All_reveal() {
     origin: "bottom",
     distance: "50px",
     duration: 1000,
+    delay: 200,
     easing: "ease-in-out",
-    interval: 100,
+    interval: 300,
     reset: false,
     opacity: 0,
   });
@@ -183,9 +184,10 @@ function All_reveal() {
   ScrollReveal().reveal(".l_to_r", {
     origin: "left",
     distance: "100px",
-    duration: 1000,
+    duration: 1200,
+    delay: 300,
     easing: "ease-in-out",
-    interval: 100,
+    interval: 500,
     reset: false,
     opacity: 0,
   });
@@ -195,8 +197,9 @@ function All_reveal() {
       z: 50,
       y: 100,
     },
-    duration: 1000,
-    interval: 100,
+    duration: 1200,
+    interval: 200,
+    delay: 200,
     reset: false,
   });
 
@@ -204,7 +207,7 @@ function All_reveal() {
   ScrollReveal().reveal(".right_no_reset", {
     origin: "right",
     distance: "800px",
-    duration: 1000,
+    duration: 1800,
     reset: false,
   });
 
@@ -215,7 +218,7 @@ function All_reveal() {
     },
     opacity:.1,
     duration: 1000,
-    interval: 100,
+    interval: 200,
     reset: false,
   });
   // ! about
@@ -223,28 +226,52 @@ function All_reveal() {
   ScrollReveal().reveal(".bottom_nor_eset", {
     origin: "bottom",
     distance: "80px",
-    duration: 1000,
+    duration: 1800,
     reset: false,
   });
   // ?opacity
   ScrollReveal().reveal(".opacity", {
-    duration: 1000,
+    duration: 1800,
     opacity:0.1,
     reset: false,
   });
   // ! contact opacity
   ScrollReveal().reveal(".iframe",{
-    duration:1000,
+    duration:5000,
     opacity:0,
     reset:false,
   }
  )
  ScrollReveal().reveal("#cardd",{
-  opacity:0,
+   opacity:0,
   origin:"top",
   distance:"300px",
-  interval: 100,
+  interval:700,
   reset:false,
  })
 }
-All_reveal();
+
+
+
+
+
+
+// ! arrivals not added at mobile screen due to more time to delay
+// ? Create a media query list
+const mediaQuery = window.matchMedia('(min-width: 850px)');
+
+// ? Define a function to handle the media query changes
+function handleMediaQueryChange(event) {
+    if (event.matches) {
+        // ? If viewport width is 700px or greater
+        All_reveal();
+    } else {
+        // ? Optional: Code to handle when viewport width is less than 700px
+    }
+}
+
+// ? Add a listener for changes to the media query
+mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+// ? Call the function initially based on the current viewport width
+handleMediaQueryChange(mediaQuery);
